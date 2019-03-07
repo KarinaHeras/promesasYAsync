@@ -1,7 +1,9 @@
-// practicando promesas con arrow function
+// practicando promesas sin arrow function
 
 function getUsers(url){
-    const users = fetch(url).then(response=>response.json())
+    const users = fetch(url).then(function(response){
+        response.json()
+    })
     return users    
 }
 
